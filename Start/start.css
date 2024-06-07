@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    background: radial-gradient(rgba(255, 230, 0) 0%, rgba(255,165,0,1) 70%, rgba(255, 115, 0) 100%);
+    background-repeat: no-repeat;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    width: 1100px;
+    height: 600px;
+    box-shadow: 0px 0px 50px 50px orange;
+    background: white;
+}
+.image-box{
+    background: linear-gradient(135deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    width: 605px;
+    height: 600px;
+    position: absolute;
+    overflow: hidden;
+}
+.element-1{
+    width: 300px;
+    height: 75px;
+    background: linear-gradient(45deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    border-radius: 50px;
+    transform: rotatez(-45deg);
+    margin-top: 450px;
+    margin-left: -90px;
+}
+.element-2{
+    width: 300px;
+    height: 75px;
+    background: linear-gradient(45deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    border-radius: 50px;
+    transform: rotatez(-45deg);
+    margin-top: 20px;
+    margin-left: -80px;
+}
+.element-3{
+    width: 300px;
+    height: 75px;
+    background: linear-gradient(45deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    border-radius: 50px;
+    transform: rotatez(-45deg);
+    margin-top: -700px;
+    margin-left: 350px;
+}
+.element-4{
+    width: 300px;
+    height: 75px;
+    background: linear-gradient(45deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    border-radius: 50px;
+    transform: rotatez(-45deg);
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.logo{
+    background-image: url("Day_By_Day_Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 170px;
+}
+.login-div{
+    width: 495px;
+    height: 600px;
+    margin-left: 605px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 219, 152);
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    margin-left: 125px;
+}
+.input:focus{
+    background-color: rgb(255, 197, 88);
+}
+.i1{
+    margin-bottom: 10px;
+}
+.i2{
+    margin-top: 10px;
+}
+.btn{
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(255, 230, 0) 0%, rgba(255,165,0,1) 50%, rgba(255, 115, 0) 100%);
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 205px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+.btn:active{
+    background: white;
+}
+.text{
+    font-size: 2rem;
+    margin-left: 195px;
+    color: rgb(192, 125, 0);
+}
+.pass-btn{
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    background-image: url("visible.png");
+    background-size: contain;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-top: -28px;
+    margin-left: 40px;
+    position: absolute;
+}
+.pass-btn.active{
+    background-image: url("hide.png");
+}

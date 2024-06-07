@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+}
+.header{
+    width: 100vw;
+    height: 70px;
+    background-color: orange;
+    transition: .3s ease;
+    display: flex;
+    justify-content: left;
+}
+.header.active{
+    justify-content: left;
+}
+.ham-menu{
+    background-color: orange;
+    border: none;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    margin: 0px;
+    transition: .3s ease;
+    background-image: url("ham_menu.png");
+    background-size: contain;
+}
+.ham-menu:hover{
+    cursor: pointer;
+}
+.ham-menu:active{
+    background-color: hsl(39, 36%, 84%);
+}
+.ham-menu.active{
+    background-image: url("ham_menu_close_icon.png");
+    background-color: white;
+    background-size: contain;
+    margin-left: 380px;
+    margin-top: 5px;
+}
+.header-logo{
+    background-image: url("Day_By_Day_Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    left: 100px;
+    transition: .3s ease;
+}
+.header-logo.active{
+    margin-left:400px;
+    transition: .3s ease;
+}
+.off-screen-menu {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    display: grid;
+    grid-template-columns: 0lvh;
+    font-size: 2rem;
+    transition: .3s ease;
+    visibility: hidden;
+}
+.off-screen-menu.active{
+    left: 0;
+    box-shadow: 0px 0px 50px 10px black;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    visibility: visible;
+}
+.osm_ul{
+    position: relative;
+}
+.osm_prof_pic{
+    width: 250px;
+    height: auto;
+    margin-top: -5px;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+.osm_text1{
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+.osm_text2{
+    font-size: 1.3rem;
+    margin-top: -25px;
+    margin-bottom: 150px;;
+}
+.osm_row{
+    text-decoration: none;
+    color: black;
+}
+.osm_row1, .osm_row2, .osm_row3{
+    width:150px;
+    aspect-ratio: 2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.osm_row1{
+    margin-top: 270px;
+}
+.osm_row1:hover, .osm_row2:hover, .osm_row3:hover{
+    background-color: lightgray;
+}
+.osm_row1:active, .osm_row2:active, .osm_row3:active{
+    background-color: white;
+}
+.profile-content{
+    width: 1000px;
+    height: 800px;
+    border-top: 5px solid orange;
+    border-radius: 5px;
+    position: absolute;
+    transition: .3s ease;
+    left: 50px;
+    top: 75px;
+    background-color: lightgray;
+    column-gap: 10px;
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+}
+.profile-content.active{
+    margin-left: 450px;
+}
+.prof-pic{
+    background-image: url("prof_pic.jpg");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 100px;
+}
+.firstName{
+    position: inherit;
+    top: 150px;
+}
+.lastName{
+    position: inherit;
+    top: 200px;
+}
+.age{
+    position: inherit;
+    top: 250px;
+}
+.mail{
+    position: inherit;
+    top: 300px;
+}
+.class{
+    position: inherit;
+    top: 350px;
+}
+.personnummer{
+    position: inherit;
+    top: 400px;
+}
+.telefonnummer{
+    position: inherit;
+    top: 450px;
+}
